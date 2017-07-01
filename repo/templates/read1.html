@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <title>Read</title>
+</head>
+<body>
+<center><br><br><br><br><br><br><br><br>
+<table border=1>
+<tr><b>
+    <td><center><b>Name</b></center></td><td><center><b>Address</b></center></td><td><center><b>Pincode</b></center></td><td><center><b>Mob.No.</b></center></td><td><center><b>Salary</b></center></td>
+</b></tr>
+<tr><td>
+        {% for item in items %}
+    <ul>{{item['name']}}</ul>
+         {% endfor %}
+    </td>
+    <td>
+        {% for item in items %}
+        <ul>{{item['address']}}</ul>
+         {% endfor %}
+    </td>
+    <td>
+        {% for item in items %}
+        <ul>{{item['pin']}}</ul>
+         {% endfor %}
+    </td>
+    <td>
+        {% for item in items %}
+        <ul>{{item['mob']}}</ul>
+         {% endfor %}
+    </td>
+    <td>
+        {% for item in items %}
+        <ul>{{item['salary']}}</ul>
+         {% endfor %}
+    </td>
+</table>
+    <center><a href="http://127.0.0.1:5000/">Go Back to home page</a></center>
+</center>
+</body>
+</html>
